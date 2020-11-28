@@ -1,0 +1,26 @@
+button{
+    background-color: #808080;
+    width: 50px;
+    height: 20px;
+    margin-left: 130px;
+    margin-top: 2px;
+}
+p {
+    margin-bottom: 0px;
+}
+::-webkit-input-placeholder {
+    font-size: 28px;
+}
+::-moz-placeholder {
+    font-size: 28px;
+}
+:-moz-placeholder  {
+    font-size: 28px;
+}
+:-ms-input-placeholder {
+    font-size: 28px;
+}
+input:checked + span{
+    background-color: #808080;
+}
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Задание №16</title>
+        <link rel="stylesheet" href="app.css" />
+        <style>
+            * {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+
+
+.contact_form ul {
+    width:750px;
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+.contact_form li {
+    padding:12px;
+    border-bottom:1px solid #eee;
+    position:relative;
+}
+
+
+.contact_form h2 {
+    margin:0;
+    display: inline;
+}
+
+.contact_form label {
+    width:150px;
+    margin-top: 3px;
+    display:inline-block;
+    float:left;
+    padding:3px;
+}
+.contact_form input {
+    height:20px;
+    width:220px;
+    padding:5px 8px;
+}
+.contact_form textarea {
+    padding:8px;
+    width:300px;
+}
+
+.contact_form input:focus, .contact_form textarea:focus {
+    width: 300px;
+}
+ 
+.contact_form button {
+    margin-left:156px;
+}
+
+.contact_form input, .contact_form textarea {
+    border:1px solid #aaa;
+    border-radius:2px;
+    padding-right:30px;
+}
+
+.contact_form input:required, .contact_form textarea:required {
+    background: #fff url(images/red_asterisk.png) no-repeat 98% center;
+}
+
+.contact_form input:required:valid, .contact_form textarea:required:valid {
+    background: #fff url(images/valid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+.contact_form input:focus:invalid, .contact_form textarea:focus:invalid {
+    background: #fff url(images/invalid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+}
+
+button.submit {
+    background-color: green;
+    border: 1px solid #509111;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+        </style>
+    </head>
+    <body>
+    <form class="contact_form">
+        <ul>
+            <li>
+                <h2>Contact Us</h2>
+            </li>
+            <li>
+                <label for="name">Name:</label>
+                <input id="name" type="text" placeholder="Name" required />
+            </li>
+            <li>
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" placeholder="Email" required />
+            </li>
+            <li>
+                <label for="website">Website:</label>
+                <input id="website" type="url" name="website" placeholder="Website" required pattern="(http|https)://.+"/>
+            </li>
+            <li>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" cols="40" rows="6"></textarea>
+            </li>
+            <li>
+                <button class="submit" type="submit">Submit Form</button>
+            </li>
+        </ul>
+    </form>
+    </body>
+</html>

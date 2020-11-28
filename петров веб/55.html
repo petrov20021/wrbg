@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+        }
+       nav{
+           position: fixed;
+           left: 2px;
+           width: 100%;
+           background-color: whitesmoke;
+           border-top: 1px solid #808080;
+           border-bottom: 1px solid #808080;
+           box-shadow: 0 2px 5px -1px #808080;
+       }
+       ul {
+           display: inline-table;
+           float: right;
+           list-style: none;
+           float: right ;
+           margin-right: 100px;
+           position: relative;
+       }
+       li{
+           float: left;
+       }
+       a{
+        display: block; 
+        padding: 30px 20px;
+        color: #222; 
+        font-size: .9em;
+        letter-spacing: 2px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      nav ul li:hover{background: #808080;}
+      nav ul li:hover ul{display: block;}
+      nav ul ul{
+        display: none;
+        background: #fff;
+        position: absolute; 
+        top: 100%;
+        border: 1px solid rgba(0,0,0,.1);
+        padding: 0%;
+        }
+        nav ul ul li{
+            float: none; 
+            text-align: center;
+            }
+            nav ul ul li{float: none;}
+    </style>
+</head>
+<body>
+    <nav role='navigation'>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a>
+            <ul>
+              <li><a href="">Our team</a></li>
+              <li><a href="">History</a></li>
+            </ul>
+          </li>
+          <li><a href="">Clients</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </nav>  
+</body>
+</html>
